@@ -17,4 +17,4 @@ ENV PYTHONPATH=/app SERVER_OUT=/server_out
 EXPOSE 8002
 EXPOSE 8003
 
-CMD ["bash", "-c", "if [ -f /etc/secrets/server.tgz ]; then cp /etc/secrets/server.tgz /workspace/server.tgz && tar xzf /workspace/server.tgz -C /workspace && bash scripts/start_server.sh; else echo 'no server kit found; idling'; sleep infinity; fi"]
+CMD ["bash", "-c", "mkdir -p /workspace && if [ -f /etc/secrets/server.tgz ]; then cp /etc/secrets/server.tgz /workspace/server.tgz && tar xzf /workspace/server.tgz -C /workspace && bash scripts/start_server.sh; else echo 'no server kit found; idling'; sleep infinity; fi"]
