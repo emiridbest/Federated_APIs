@@ -23,19 +23,19 @@ server:
 sites:
   - tre_id: hunt
     adapter: rest
-    api_url: http://tre-hunt:8000
+    api_url: https://federated-apis-1.onrender.com
     region: nordic
     org: hunt
     weight: 5
   - tre_id: gefion
     adapter: datashield
-    api_url: http://tre-gefion:8000
+    api_url: https://federated-apis-3.onrender.com
     region: nordic
     org: gefion
     weight: 3
   - tre_id: brev
     adapter: sql
-    api_url: http://tre-brev:8000
+    api_url: https://federated-apis-2.onrender.com
     region: nordic
     org: brev
     weight: 2

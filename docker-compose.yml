@@ -50,7 +50,7 @@ services:
     container_name: flare-hunt
     environment:
       TRE_ID: hunt
-      TRE_API_URL: http://tre-hunt:8000
+      TRE_API_URL: https://federated-apis-1.onrender.com
       TRE_REGION: nordic
       FLARE_SERVER: flare-server:8002
     volumes:
@@ -94,7 +94,7 @@ services:
     container_name: flare-gefion
     environment:
       TRE_ID: gefion
-      TRE_API_URL: http://tre-gefion:8000
+      TRE_API_URL: https://federated-apis-3.onrender.com
       TRE_REGION: nordic
       FLARE_SERVER: flare-server:8002
     volumes:
@@ -138,7 +138,7 @@ services:
     container_name: flare-brev
     environment:
       TRE_ID: brev
-      TRE_API_URL: http://tre-brev:8000
+      TRE_API_URL: https://federated-apis-2.onrender.com
       TRE_REGION: nordic
       FLARE_SERVER: flare-server:8002
     volumes:
